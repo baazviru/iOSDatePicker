@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func nextDateAction(_ sender:UIButton){
-        
+        print("hello")
         let str = Utils.nextDate()
         dateBtn.setTitle(str, for: .normal)
     }
