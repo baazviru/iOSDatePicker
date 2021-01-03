@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSDatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3j-hN-bCS">
+                                <rect key="frame" x="132.5" y="424" width="149" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Select Date"/>
+                                <connections>
+                                    <action selector="selectDateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jm0-72-MJe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqz-4Z-2y2">
+                                <rect key="frame" x="20" y="144" width="91" height="30"/>
+                                <state key="normal" title="Privious Date"/>
+                                <connections>
+                                    <action selector="previosDateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjj-fu-l2V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmR-Zm-LnF">
+                                <rect key="frame" x="318" y="144" width="76" height="30"/>
+                                <state key="normal" title="Next Date  "/>
+                                <connections>
+                                    <action selector="nextDateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUE-nu-Tsm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cmR-Zm-LnF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="4uf-Ac-3DA"/>
+                            <constraint firstItem="Yqz-4Z-2y2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="5II-rV-njH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cmR-Zm-LnF" secondAttribute="trailing" constant="20" id="KTJ-hb-uA4"/>
+                            <constraint firstItem="a3j-hN-bCS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pw9-bC-16r"/>
+                            <constraint firstItem="Yqz-4Z-2y2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SlN-RM-z93"/>
+                            <constraint firstItem="a3j-hN-bCS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yt7-DL-Eo7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateBtn" destination="a3j-hN-bCS" id="6LD-XS-0Yp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
+        </scene>
+    </scenes>
+</document>
